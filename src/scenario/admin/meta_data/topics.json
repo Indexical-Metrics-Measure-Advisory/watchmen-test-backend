@@ -1,0 +1,291 @@
+[
+  {
+    "last_modified": "2021-03-08T08:43:56.912000",
+    "createTime": "2021-03-08 17:52:34",
+    "lastModifyTime": "2021-03-08 17:52:34",
+    "topicId": "5607739297483806326",
+    "name": "test_raw_data",
+    "code": null,
+    "type": "raw",
+    "factors": [
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:52:54",
+        "lastModifyTime": "2021-03-08 17:52:54",
+        "type": "sequence",
+        "factorId": "faaf648fba50440a96fb969111fd1684",
+        "name": "data_id",
+        "label": "pk",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:53:21",
+        "lastModifyTime": "2021-03-08 17:53:21",
+        "type": "text",
+        "factorId": "7749a6a762384d5dbd0f490ee54ae0d2",
+        "name": "text_factor",
+        "label": "text_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:53:57",
+        "lastModifyTime": "2021-03-08 17:53:57",
+        "type": "number",
+        "factorId": "be0abc6881d7403696d1e3e03d0f1b60",
+        "name": "number_factor",
+        "label": "number_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:54:22",
+        "lastModifyTime": "2021-03-08 17:54:22",
+        "type": "address",
+        "factorId": "9a7e208509eb481ab7396a41b7fa3dfc",
+        "name": "address_factor",
+        "label": "address_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:54:36",
+        "lastModifyTime": "2021-03-08 17:54:36",
+        "type": "date",
+        "factorId": "79857a84656a4d76ba3d09992bade3e5",
+        "name": "date_factor",
+        "label": "date_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:54:54",
+        "lastModifyTime": "2021-03-08 17:54:54",
+        "type": "array",
+        "factorId": "14fe99931f774051b9ab3c6901bbb560",
+        "name": "array_factor",
+        "label": "array_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:55:16",
+        "lastModifyTime": "2021-03-08 17:55:16",
+        "type": "sequence",
+        "factorId": "c4f01bf3d0584a0db3d0843bf4cb5a8f",
+        "name": "array_factor.pk_id",
+        "label": "array_factor.pk_id",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:55:32",
+        "lastModifyTime": "2021-03-08 17:55:32",
+        "type": "number",
+        "factorId": "c0e746abac3346a09ee1a26f81f39f46",
+        "name": "array_factor.number_factor",
+        "label": "array_factor.number_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:55:42",
+        "lastModifyTime": "2021-03-08 17:55:42",
+        "type": "text",
+        "factorId": "5565b9026ac84fdfbf7ed22f416b15e3",
+        "name": "array_factor.text_factor",
+        "label": "array_factor.text_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:55:54",
+        "lastModifyTime": "2021-03-08 17:55:54",
+        "type": "enum",
+        "factorId": "6424254376cc41ea8c6bca121429968c",
+        "name": "array_factor.enum_factor",
+        "label": "array_factor.enum_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:56:15",
+        "lastModifyTime": "2021-03-08 17:56:15",
+        "type": "boolean",
+        "factorId": "028e7ee3cba44115ab4f8c5b90200ce0",
+        "name": "array_factor.bool_factor",
+        "label": "array_factor.bool_factor",
+        "description": null
+      }
+    ],
+    "description": "test _data",
+    "factorIds": []
+  },
+  {
+    "last_modified": "2021-03-08T08:43:56.912000",
+    "createTime": "2021-03-08 17:57:05",
+    "lastModifyTime": "2021-03-08 17:57:05",
+    "topicId": "5607740540527559761",
+    "name": "test_distinct_data",
+    "code": null,
+    "type": "distinct",
+    "factors": [
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:57:26",
+        "lastModifyTime": "2021-03-08 17:57:26",
+        "type": "sequence",
+        "factorId": "ba3094f9f5624ed1bde268b13d7ff5f4",
+        "name": "pk_id",
+        "label": "pk_id",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:57:35",
+        "lastModifyTime": "2021-03-08 17:57:35",
+        "type": "number",
+        "factorId": "28de1fc0e025447b86956b8f81e58fc5",
+        "name": "number_factor",
+        "label": "number_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:57:46",
+        "lastModifyTime": "2021-03-08 17:57:46",
+        "type": "text",
+        "factorId": "07ec2ccac364450ebc845a689643ed0b",
+        "name": "text_factor",
+        "label": "text_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:58:02",
+        "lastModifyTime": "2021-03-08 17:58:02",
+        "type": "date",
+        "factorId": "99fac65107b442219ffaa131248801d5",
+        "name": "date_factor",
+        "label": "date_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:58:14",
+        "lastModifyTime": "2021-03-08 17:58:14",
+        "type": "address",
+        "factorId": "0bb3dc84a2804ba2ba971b8aa3ff4b6b",
+        "name": "address_factor",
+        "label": "address_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:58:25",
+        "lastModifyTime": "2021-03-08 17:58:25",
+        "type": "year",
+        "factorId": "31be196315364be0883797b2a54c7314",
+        "name": "date_factor_year",
+        "label": "date_factor_year",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:58:44",
+        "lastModifyTime": "2021-03-08 17:58:44",
+        "type": "month",
+        "factorId": "f6993e39124e4b208349478999395aef",
+        "name": "date_factor_month",
+        "label": "date_factor_month",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:58:55",
+        "lastModifyTime": "2021-03-08 17:58:55",
+        "type": "day-kind",
+        "factorId": "13f16056e920474bb9dafc66ad2da448",
+        "name": "date_factor_workday",
+        "label": "date_factor_workday",
+        "description": null
+      }
+    ],
+    "description": "test_distinct_data",
+    "factorIds": []
+  },
+  {
+    "last_modified": "2021-03-08T08:43:56.912000",
+    "createTime": "2021-03-08 17:59:31",
+    "lastModifyTime": "2021-03-08 17:59:31",
+    "topicId": "5607741220815596817",
+    "name": "test_aggregate_data",
+    "code": null,
+    "type": "aggregate",
+    "factors": [
+        {
+            "last_modified": "2021-03-08T08:43:56.912000",
+            "createTime": "2021-03-08 17:59:45",
+            "lastModifyTime": "2021-03-08 17:59:45",
+            "type": "text",
+            "factorId": "cf1bda20b4f14c7d8e8315a0781afceb",
+            "name": "group_id",
+            "label": "group_id",
+            "description": null
+        },
+        {
+            "last_modified": "2021-03-08T08:43:56.912000",
+            "createTime": "2021-03-08 17:59:56",
+            "lastModifyTime": "2021-03-08 17:59:56",
+            "type": "number",
+            "factorId": "75c17cf0b31b449c8148552b988c890c",
+            "name": "sum_number_factor",
+            "label": "aggr_number_factor",
+            "description": null
+        },
+        {
+            "last_modified": "2021-03-08T08:43:56.912000",
+            "createTime": "2021-03-08 18:00:09",
+            "lastModifyTime": "2021-03-08 18:00:09",
+            "type": "number",
+            "factorId": "97b314af9b01492e872b276a4dce1ec4",
+            "name": "count_number_factor",
+            "label": "count_number_factor",
+            "description": null
+        },
+        {
+            "last_modified": "2021-03-08T08:43:56.912000",
+            "createTime": "2021-03-08 18:00:26",
+            "lastModifyTime": "2021-03-08 18:00:26",
+            "type": "number",
+            "factorId": "628623898b6b4634be97a410825ffea8",
+            "name": "max_number_factor",
+            "label": "max_number_factor",
+            "description": null
+        },
+        {
+            "last_modified": "2021-03-08T08:43:56.912000",
+            "createTime": "2021-03-08 18:00:35",
+            "lastModifyTime": "2021-03-08 18:00:35",
+            "type": "number",
+            "factorId": "2775f2eb9acc49b88865d282310b2f62",
+            "name": "min_number_factor",
+            "label": "min_number_factor",
+            "description": null
+        },
+        {
+            "last_modified": "2021-03-09T06:15:46.362000",
+            "createTime": "2021-03-09 14:17:25",
+            "lastModifyTime": "2021-03-09 14:17:25",
+            "type": "text",
+            "factorId": "86ea8ade7ba04c9295d83bb4a7de417e",
+            "name": "text_group",
+            "label": "text_group",
+            "description": null
+        }
+    ],
+    "description": "test_aggregate_data",
+    "factorIds": []
+}
+]

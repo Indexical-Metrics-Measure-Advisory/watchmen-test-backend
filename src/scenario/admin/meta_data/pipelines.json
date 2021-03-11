@@ -1,0 +1,207 @@
+[
+  {
+    "last_modified": "2021-03-08T08:43:56.912000",
+    "createTime": "2021-03-08 18:01:04",
+    "lastModifyTime": "2021-03-08 18:01:04",
+    "conditional": false,
+    "on": null,
+    "pipelineId": "5607741371934731445",
+    "topicId": "5607739297483806326",
+    "name": "test-data",
+    "type": "insert-or-merge",
+    "stages": [
+        {
+            "last_modified": "2021-03-08T08:43:56.912000",
+            "createTime": null,
+            "lastModifyTime": null,
+            "conditional": false,
+            "on": null,
+            "stageId": "f-414d96cc484d45d1b9782d65e242dbde",
+            "name": "test-data",
+            "units": [
+                {
+                    "last_modified": "2021-03-08T08:43:56.912000",
+                    "createTime": null,
+                    "lastModifyTime": null,
+                    "conditional": false,
+                    "on": null,
+                    "unitId": "f-5b3b240f1a1447e2b5179003ecaadbd4",
+                    "do": [
+                        {
+                            "last_modified": "2021-03-08T08:43:56.912000",
+                            "createTime": null,
+                            "lastModifyTime": null,
+                            "conditional": false,
+                            "on": null,
+                            "actionId": "f-90a45cfbb5ff4b80bf51e7d0a3166853",
+                            "type": "insert-or-merge-row",
+                            "variableName": null,
+                            "severity": "medium",
+                            "message": "",
+                            "arithmetic": null,
+                            "topicId": "5607740540527559761",
+                            "factorId": null,
+                            "mapping": [
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "topic",
+                                        "type": null,
+                                        "parameters": [],
+                                        "value": null,
+                                        "topicId": "5607739297483806326",
+                                        "factorId": "faaf648fba50440a96fb969111fd1684"
+                                    },
+                                    "factorId": "ba3094f9f5624ed1bde268b13d7ff5f4"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "topic",
+                                        "type": null,
+                                        "parameters": [],
+                                        "value": null,
+                                        "topicId": "5607739297483806326",
+                                        "factorId": "be0abc6881d7403696d1e3e03d0f1b60"
+                                    },
+                                    "factorId": "28de1fc0e025447b86956b8f81e58fc5"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "topic",
+                                        "type": null,
+                                        "parameters": [],
+                                        "value": null,
+                                        "topicId": "5607739297483806326",
+                                        "factorId": "79857a84656a4d76ba3d09992bade3e5"
+                                    },
+                                    "factorId": "99fac65107b442219ffaa131248801d5"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "topic",
+                                        "type": null,
+                                        "parameters": [],
+                                        "value": null,
+                                        "topicId": "5607739297483806326",
+                                        "factorId": "9a7e208509eb481ab7396a41b7fa3dfc"
+                                    },
+                                    "factorId": "0bb3dc84a2804ba2ba971b8aa3ff4b6b"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "computed",
+                                        "type": "year-of",
+                                        "parameters": [
+                                            {
+                                                "kind": "topic",
+                                                "type": null,
+                                                "parameters": [],
+                                                "value": null,
+                                                "topicId": "5607739297483806326",
+                                                "factorId": "79857a84656a4d76ba3d09992bade3e5"
+                                            }
+                                        ],
+                                        "value": null,
+                                        "topicId": null,
+                                        "factorId": null
+                                    },
+                                    "factorId": "31be196315364be0883797b2a54c7314"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "computed",
+                                        "type": "month-of",
+                                        "parameters": [
+                                            {
+                                                "kind": "topic",
+                                                "type": null,
+                                                "parameters": [],
+                                                "value": null,
+                                                "topicId": "5607739297483806326",
+                                                "factorId": "79857a84656a4d76ba3d09992bade3e5"
+                                            }
+                                        ],
+                                        "value": null,
+                                        "topicId": null,
+                                        "factorId": null
+                                    },
+                                    "factorId": "f6993e39124e4b208349478999395aef"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "computed",
+                                        "type": "day-of-month",
+                                        "parameters": [
+                                            {
+                                                "kind": "topic",
+                                                "type": null,
+                                                "parameters": [],
+                                                "value": null,
+                                                "topicId": "5607739297483806326",
+                                                "factorId": "79857a84656a4d76ba3d09992bade3e5"
+                                            }
+                                        ],
+                                        "value": null,
+                                        "topicId": null,
+                                        "factorId": null
+                                    },
+                                    "factorId": "13f16056e920474bb9dafc66ad2da448"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "topic",
+                                        "type": null,
+                                        "parameters": [],
+                                        "value": null,
+                                        "topicId": "5607739297483806326",
+                                        "factorId": "7749a6a762384d5dbd0f490ee54ae0d2"
+                                    },
+                                    "factorId": "07ec2ccac364450ebc845a689643ed0b"
+                                }
+                            ],
+                            "by": {
+                                "left": null,
+                                "operator": null,
+                                "right": null,
+                                "jointType": "and",
+                                "filters": [
+                                    {
+                                        "left": {
+                                            "kind": "topic",
+                                            "type": null,
+                                            "parameters": [],
+                                            "value": null,
+                                            "topicId": "5607739297483806326",
+                                            "factorId": "faaf648fba50440a96fb969111fd1684"
+                                        },
+                                        "operator": "equals",
+                                        "right": {
+                                            "kind": "topic",
+                                            "type": null,
+                                            "parameters": [],
+                                            "value": null,
+                                            "topicId": "5607740540527559761",
+                                            "factorId": "ba3094f9f5624ed1bde268b13d7ff5f4"
+                                        },
+                                        "jointType": null,
+                                        "filters": []
+                                    }
+                                ]
+                            },
+                            "source": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "enabled": true
+}
+]

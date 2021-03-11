@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "watchmen-test-backend"
+version = "0.1.0"
+description = ""
+authors = ["luke0623 <luke0623@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

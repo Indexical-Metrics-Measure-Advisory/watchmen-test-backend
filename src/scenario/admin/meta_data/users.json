@@ -1,0 +1,14 @@
+[
+  {
+    "last_modified": "2021-03-11T07:22:21.575431",
+    "createTime": null,
+    "lastModifyTime": null,
+    "userId": "5609843934473513559",
+    "name": "imma-admin",
+    "nickName": null,
+    "password": "$2b$12$S0KAxKh.FEX6QqylXjoqaOnogVxwnDYbEgG5SzjrymssxGT8CzgdS",
+    "is_active": true,
+    "groupIds": null,
+    "role": "admin"
+  }
+]
