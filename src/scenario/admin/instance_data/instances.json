@@ -49,5 +49,15 @@
       "address_factor": "shanghai",
       "text_factor": "text3"
     }
+  },
+   {
+    "code": "test_raw_data",
+    "data": {
+      "data_id": 6,
+      "number_factor": 200,
+      "date_factor": "2011-12-14",
+      "address_factor": "shanghai",
+      "text_factor": "text3"
+    }
   }
 ]
