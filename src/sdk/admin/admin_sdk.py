@@ -11,7 +11,8 @@ def import_topics(topics):
     for topic in topics:
         response = requests.post("http://localhost:8000/import/admin/topic", data=json.dumps(topic),
                                  headers=headers)
-        print(response.status_code)
+        # print(response.status_code)
+        assert response.status_code == 200
 
 
 def import_spaces(spaces):
@@ -19,7 +20,8 @@ def import_spaces(spaces):
     for space in spaces:
         response = requests.post("http://localhost:8000/import/admin/space", data=json.dumps(space),
                                  headers=headers)
-        print(response.status_code)
+        # print(response.status_code)
+        assert response.status_code == 200
 
 
 def import_pipelines(pipelines):
@@ -27,4 +29,5 @@ def import_pipelines(pipelines):
     for pipeline in pipelines:
         response = requests.post("http://localhost:8000/import/admin/pipeline", data=json.dumps(pipeline),
                                  headers=headers)
-        print(response.status_code)
+        # print(response.status_codes)
+        assert  response.status_code ==200
