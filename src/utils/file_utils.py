@@ -21,5 +21,5 @@ def load_pipelines():
 
 
 def load_instances():
-    with open('scenario/admin/instance_data/instances.json') as f:
+    with open('scenario/admin/instance_data/simple_core_path.json') as f:
         return json.load(f)

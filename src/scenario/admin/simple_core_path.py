@@ -44,6 +44,7 @@ def main():
     clean_instance_data()
     import_metadata()
     import_instance_data()
+    import_instance_data()
     verify_topic_data()
     print("all pass ")
     # clean_instance_data()
