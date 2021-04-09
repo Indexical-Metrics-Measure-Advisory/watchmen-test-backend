@@ -125,95 +125,145 @@
   {
     "last_modified": "2021-03-08T08:43:56.912000",
     "createTime": "2021-03-08 17:57:05",
-    "lastModifyTime": "2021-03-08 17:57:05",
     "topicId": "5607740540527559761",
     "name": "test_distinct_data",
-    "code": null,
     "type": "distinct",
+    "kind": null,
     "factors": [
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:57:26",
-        "lastModifyTime": "2021-03-08 17:57:26",
         "type": "sequence",
         "factorId": "ba3094f9f5624ed1bde268b13d7ff5f4",
         "name": "pk_id",
+        "enumId": null,
         "label": "pk_id",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       },
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:57:35",
-        "lastModifyTime": "2021-03-08 17:57:35",
         "type": "number",
         "factorId": "28de1fc0e025447b86956b8f81e58fc5",
         "name": "number_factor",
+        "enumId": null,
         "label": "number_factor",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       },
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:57:46",
-        "lastModifyTime": "2021-03-08 17:57:46",
         "type": "text",
         "factorId": "07ec2ccac364450ebc845a689643ed0b",
         "name": "text_factor",
+        "enumId": null,
         "label": "text_factor",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       },
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:58:02",
-        "lastModifyTime": "2021-03-08 17:58:02",
         "type": "date",
         "factorId": "99fac65107b442219ffaa131248801d5",
         "name": "date_factor",
+        "enumId": null,
         "label": "date_factor",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       },
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:58:14",
-        "lastModifyTime": "2021-03-08 17:58:14",
         "type": "address",
         "factorId": "0bb3dc84a2804ba2ba971b8aa3ff4b6b",
         "name": "address_factor",
+        "enumId": null,
         "label": "address_factor",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       },
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:58:25",
-        "lastModifyTime": "2021-03-08 17:58:25",
         "type": "year",
         "factorId": "31be196315364be0883797b2a54c7314",
         "name": "date_factor_year",
+        "enumId": null,
         "label": "date_factor_year",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       },
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:58:44",
-        "lastModifyTime": "2021-03-08 17:58:44",
         "type": "month",
         "factorId": "f6993e39124e4b208349478999395aef",
         "name": "date_factor_month",
+        "enumId": null,
         "label": "date_factor_month",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       },
       {
         "last_modified": "2021-03-08T08:43:56.912000",
         "createTime": "2021-03-08 17:58:55",
-        "lastModifyTime": "2021-03-08 17:58:55",
         "type": "day-kind",
         "factorId": "13f16056e920474bb9dafc66ad2da448",
         "name": "date_factor_workday",
+        "enumId": null,
         "label": "date_factor_workday",
-        "description": null
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "last_modified": "2021-03-25T03:20:11.925000",
+        "createTime": "2021-03-25 11:20:50",
+        "type": "number",
+        "factorId": "fbc96910e50046948e436d2c2564e243",
+        "name": "two_number_factor",
+        "enumId": null,
+        "label": "two_number_factor",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "last_modified": "2021-03-25T03:20:11.925000",
+        "createTime": "2021-03-25 11:29:41",
+        "type": "number",
+        "factorId": "37816e5f83eb411680b114d8043c17f5",
+        "name": "number_factor_add_constants",
+        "enumId": null,
+        "label": "number_factor_add_constants",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "last_modified": "2021-03-25T03:20:11.925000",
+        "createTime": "2021-03-25 11:30:01",
+        "type": "number",
+        "factorId": "d2fd58d5c3044434ac16f862a50a9b6d",
+        "name": "three_number_factor",
+        "enumId": null,
+        "label": "three_number_factor",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
       }
     ],
-    "description": "test_distinct_data",
-    "factorIds": []
+    "description": "test_distinct_data"
   },
   {
     "last_modified": "2021-03-08T08:43:56.912000",
@@ -224,68 +274,92 @@
     "code": null,
     "type": "aggregate",
     "factors": [
-        {
-            "last_modified": "2021-03-08T08:43:56.912000",
-            "createTime": "2021-03-08 17:59:45",
-            "lastModifyTime": "2021-03-08 17:59:45",
-            "type": "text",
-            "factorId": "cf1bda20b4f14c7d8e8315a0781afceb",
-            "name": "group_id",
-            "label": "group_id",
-            "description": null
-        },
-        {
-            "last_modified": "2021-03-08T08:43:56.912000",
-            "createTime": "2021-03-08 17:59:56",
-            "lastModifyTime": "2021-03-08 17:59:56",
-            "type": "number",
-            "factorId": "75c17cf0b31b449c8148552b988c890c",
-            "name": "sum_number_factor",
-            "label": "aggr_number_factor",
-            "description": null
-        },
-        {
-            "last_modified": "2021-03-08T08:43:56.912000",
-            "createTime": "2021-03-08 18:00:09",
-            "lastModifyTime": "2021-03-08 18:00:09",
-            "type": "number",
-            "factorId": "97b314af9b01492e872b276a4dce1ec4",
-            "name": "count_number_factor",
-            "label": "count_number_factor",
-            "description": null
-        },
-        {
-            "last_modified": "2021-03-08T08:43:56.912000",
-            "createTime": "2021-03-08 18:00:26",
-            "lastModifyTime": "2021-03-08 18:00:26",
-            "type": "number",
-            "factorId": "628623898b6b4634be97a410825ffea8",
-            "name": "max_number_factor",
-            "label": "max_number_factor",
-            "description": null
-        },
-        {
-            "last_modified": "2021-03-08T08:43:56.912000",
-            "createTime": "2021-03-08 18:00:35",
-            "lastModifyTime": "2021-03-08 18:00:35",
-            "type": "number",
-            "factorId": "2775f2eb9acc49b88865d282310b2f62",
-            "name": "min_number_factor",
-            "label": "min_number_factor",
-            "description": null
-        },
-        {
-            "last_modified": "2021-03-09T06:15:46.362000",
-            "createTime": "2021-03-09 14:17:25",
-            "lastModifyTime": "2021-03-09 14:17:25",
-            "type": "text",
-            "factorId": "86ea8ade7ba04c9295d83bb4a7de417e",
-            "name": "text_group",
-            "label": "text_group",
-            "description": null
-        }
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:59:45",
+        "lastModifyTime": "2021-03-08 17:59:45",
+        "type": "text",
+        "factorId": "cf1bda20b4f14c7d8e8315a0781afceb",
+        "name": "group_id",
+        "label": "group_id",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 17:59:56",
+        "lastModifyTime": "2021-03-08 17:59:56",
+        "type": "number",
+        "factorId": "75c17cf0b31b449c8148552b988c890c",
+        "name": "sum_number_factor",
+        "label": "aggr_number_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 18:00:09",
+        "lastModifyTime": "2021-03-08 18:00:09",
+        "type": "number",
+        "factorId": "97b314af9b01492e872b276a4dce1ec4",
+        "name": "count_number_factor",
+        "label": "count_number_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 18:00:26",
+        "lastModifyTime": "2021-03-08 18:00:26",
+        "type": "number",
+        "factorId": "628623898b6b4634be97a410825ffea8",
+        "name": "max_number_factor",
+        "label": "max_number_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-08T08:43:56.912000",
+        "createTime": "2021-03-08 18:00:35",
+        "lastModifyTime": "2021-03-08 18:00:35",
+        "type": "number",
+        "factorId": "2775f2eb9acc49b88865d282310b2f62",
+        "name": "min_number_factor",
+        "label": "min_number_factor",
+        "description": null
+      },
+      {
+        "last_modified": "2021-03-09T06:15:46.362000",
+        "createTime": "2021-03-09 14:17:25",
+        "lastModifyTime": "2021-03-09 14:17:25",
+        "type": "text",
+        "factorId": "86ea8ade7ba04c9295d83bb4a7de417e",
+        "name": "text_group",
+        "label": "text_group",
+        "description": null
+      }
     ],
     "description": "test_aggregate_data",
     "factorIds": []
-}
+  },
+  {
+    "last_modified": "2021-03-23T06:06:14.380000",
+    "createTime": "2021-03-23 14:07:12",
+    "topicId": "5618495593695683019",
+    "name": "test_array_factor",
+    "type": "distinct",
+    "kind": "business",
+    "factors": [
+      {
+        "last_modified": "2021-03-23T06:06:14.380000",
+        "createTime": "2021-03-23 14:07:28",
+        "type": "unsigned",
+        "factorId": "7d651c1ed536451ba67454f1b653c6ea",
+        "name": "id",
+        "enumId": null,
+        "label": "id",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": null,
+    "factorIds": []
+  }
 ]

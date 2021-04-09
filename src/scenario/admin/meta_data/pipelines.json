@@ -1,8 +1,143 @@
 [
   {
+    "last_modified": "2021-03-09T03:30:17.569000",
+    "createTime": "2021-03-09 11:41:26",
+    "conditional": false,
+    "on": null,
+    "pipelineId": "5608275072217293868",
+    "topicId": "5607740540527559761",
+    "name": "test aggregate",
+    "type": "insert-or-merge",
+    "stages": [
+      {
+        "last_modified": "2021-03-09T03:30:17.569000",
+        "createTime": null,
+        "conditional": false,
+        "on": null,
+        "stageId": "f-8235efb990094bac98b53eda42d0c90d",
+        "name": "Noname Stage",
+        "units": [
+          {
+            "last_modified": "2021-03-09T03:30:17.569000",
+            "createTime": null,
+            "conditional": false,
+            "on": null,
+            "unitId": "f-7a2d85fea6bc4547a34b516f8d728a46",
+            "do": [
+              {
+                "last_modified": "2021-03-09T03:30:17.569000",
+                "createTime": null,
+                "conditional": false,
+                "on": null,
+                "actionId": "f-8db581bd40144cf5bb558b77ec1c517d",
+                "type": "write-factor",
+                "variableName": null,
+                "severity": "medium",
+                "message": "",
+                "arithmetic": "sum",
+                "topicId": "5607741220815596817",
+                "factorId": "75c17cf0b31b449c8148552b988c890c",
+                "mapping": [],
+                "by": {
+                  "left": null,
+                  "operator": null,
+                  "right": null,
+                  "jointType": "and",
+                  "filters": [
+                    {
+                      "left": {
+                        "kind": "topic",
+                        "type": null,
+                        "parameters": [],
+                        "value": null,
+                        "topicId": "5607740540527559761",
+                        "factorId": "07ec2ccac364450ebc845a689643ed0b"
+                      },
+                      "operator": "equals",
+                      "right": {
+                        "kind": "topic",
+                        "type": null,
+                        "parameters": [],
+                        "value": null,
+                        "topicId": "5607741220815596817",
+                        "factorId": "cf1bda20b4f14c7d8e8315a0781afceb"
+                      },
+                      "jointType": null,
+                      "filters": []
+                    }
+                  ]
+                },
+                "source": {
+                  "kind": "topic",
+                  "type": null,
+                  "parameters": [],
+                  "value": null,
+                  "topicId": "5607740540527559761",
+                  "factorId": "28de1fc0e025447b86956b8f81e58fc5"
+                }
+              },
+              {
+                "last_modified": "2021-03-09T03:30:17.569000",
+                "createTime": null,
+                "conditional": false,
+                "on": null,
+                "actionId": "f-5b8b1ef54bea46d3bde21318cc04fa18",
+                "type": "write-factor",
+                "variableName": null,
+                "severity": "medium",
+                "message": "",
+                "arithmetic": "count",
+                "topicId": "5607741220815596817",
+                "factorId": "97b314af9b01492e872b276a4dce1ec4",
+                "mapping": [],
+                "by": {
+                  "left": null,
+                  "operator": null,
+                  "right": null,
+                  "jointType": "and",
+                  "filters": [
+                    {
+                      "left": {
+                        "kind": "topic",
+                        "type": null,
+                        "parameters": [],
+                        "value": null,
+                        "topicId": "5607740540527559761",
+                        "factorId": "07ec2ccac364450ebc845a689643ed0b"
+                      },
+                      "operator": "equals",
+                      "right": {
+                        "kind": "topic",
+                        "type": null,
+                        "parameters": [],
+                        "value": null,
+                        "topicId": "5607741220815596817",
+                        "factorId": "cf1bda20b4f14c7d8e8315a0781afceb"
+                      },
+                      "jointType": null,
+                      "filters": []
+                    }
+                  ]
+                },
+                "source": {
+                  "kind": "topic",
+                  "type": null,
+                  "parameters": [],
+                  "value": null,
+                  "topicId": "5607740540527559761",
+                  "factorId": "28de1fc0e025447b86956b8f81e58fc5"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "enabled": true
+  },
+  {
     "last_modified": "2021-03-08T08:43:56.912000",
     "createTime": "2021-03-08 18:01:04",
-    "lastModifyTime": "2021-03-08 18:01:04",
     "conditional": false,
     "on": null,
     "pipelineId": "5607741371934731445",
@@ -13,7 +148,6 @@
         {
             "last_modified": "2021-03-08T08:43:56.912000",
             "createTime": null,
-            "lastModifyTime": null,
             "conditional": false,
             "on": null,
             "stageId": "f-414d96cc484d45d1b9782d65e242dbde",
@@ -22,7 +156,6 @@
                 {
                     "last_modified": "2021-03-08T08:43:56.912000",
                     "createTime": null,
-                    "lastModifyTime": null,
                     "conditional": false,
                     "on": null,
                     "unitId": "f-5b3b240f1a1447e2b5179003ecaadbd4",
@@ -30,7 +163,6 @@
                         {
                             "last_modified": "2021-03-08T08:43:56.912000",
                             "createTime": null,
-                            "lastModifyTime": null,
                             "conditional": false,
                             "on": null,
                             "actionId": "f-90a45cfbb5ff4b80bf51e7d0a3166853",
@@ -164,6 +296,64 @@
                                         "factorId": "7749a6a762384d5dbd0f490ee54ae0d2"
                                     },
                                     "factorId": "07ec2ccac364450ebc845a689643ed0b"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "computed",
+                                        "type": "add",
+                                        "parameters": [
+                                            {
+                                                "kind": "topic",
+                                                "type": null,
+                                                "parameters": [],
+                                                "value": null,
+                                                "topicId": "5607739297483806326",
+                                                "factorId": "be0abc6881d7403696d1e3e03d0f1b60"
+                                            },
+                                            {
+                                                "kind": "constant",
+                                                "type": null,
+                                                "parameters": [],
+                                                "value": "50",
+                                                "topicId": null,
+                                                "factorId": null
+                                            }
+                                        ],
+                                        "value": null,
+                                        "topicId": null,
+                                        "factorId": null
+                                    },
+                                    "factorId": "37816e5f83eb411680b114d8043c17f5"
+                                },
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "computed",
+                                        "type": "add",
+                                        "parameters": [
+                                            {
+                                                "kind": "topic",
+                                                "type": null,
+                                                "parameters": [],
+                                                "value": null,
+                                                "topicId": "5607739297483806326",
+                                                "factorId": "be0abc6881d7403696d1e3e03d0f1b60"
+                                            },
+                                            {
+                                                "kind": "topic",
+                                                "type": null,
+                                                "parameters": [],
+                                                "value": null,
+                                                "topicId": "5607739297483806326",
+                                                "factorId": "be0abc6881d7403696d1e3e03d0f1b60"
+                                            }
+                                        ],
+                                        "value": null,
+                                        "topicId": null,
+                                        "factorId": null
+                                    },
+                                    "factorId": "fbc96910e50046948e436d2c2564e243"
                                 }
                             ],
                             "by": {
@@ -189,6 +379,64 @@
                                             "value": null,
                                             "topicId": "5607740540527559761",
                                             "factorId": "ba3094f9f5624ed1bde268b13d7ff5f4"
+                                        },
+                                        "jointType": null,
+                                        "filters": []
+                                    }
+                                ]
+                            },
+                            "source": null
+                        },
+                        {
+                            "last_modified": "2021-03-23T06:06:14.380000",
+                            "createTime": null,
+                            "conditional": false,
+                            "on": null,
+                            "actionId": "f-eeee52966a414f299be4341f04dfba4d",
+                            "type": "insert-or-merge-row",
+                            "variableName": null,
+                            "severity": "medium",
+                            "message": "",
+                            "arithmetic": null,
+                            "topicId": "5618495593695683019",
+                            "factorId": null,
+                            "mapping": [
+                                {
+                                    "arithmetic": "none",
+                                    "source": {
+                                        "kind": "topic",
+                                        "type": null,
+                                        "parameters": [],
+                                        "value": null,
+                                        "topicId": "5607739297483806326",
+                                        "factorId": "c4f01bf3d0584a0db3d0843bf4cb5a8f"
+                                    },
+                                    "factorId": "7d651c1ed536451ba67454f1b653c6ea"
+                                }
+                            ],
+                            "by": {
+                                "left": null,
+                                "operator": null,
+                                "right": null,
+                                "jointType": "and",
+                                "filters": [
+                                    {
+                                        "left": {
+                                            "kind": "topic",
+                                            "type": null,
+                                            "parameters": [],
+                                            "value": null,
+                                            "topicId": "5618495593695683019",
+                                            "factorId": "7d651c1ed536451ba67454f1b653c6ea"
+                                        },
+                                        "operator": "equals",
+                                        "right": {
+                                            "kind": "topic",
+                                            "type": null,
+                                            "parameters": [],
+                                            "value": null,
+                                            "topicId": "5607739297483806326",
+                                            "factorId": "c4f01bf3d0584a0db3d0843bf4cb5a8f"
                                         },
                                         "jointType": null,
                                         "filters": []
