@@ -7,6 +7,13 @@ authors = ["luke0623 <luke0623@outlook.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 requests = "^2.25.1"
+fire = "^0.4.0"
+pydantic = "^1.8.2"
+python-dateutil = "^2.8.1"
+arrow = "^1.1.0"
+jinja2 = "^3.0.1"
+weasyprint = "^52.5"
+pandas = "^1.2.4"
 
 [tool.poetry.dev-dependencies]
 

@@ -11,7 +11,7 @@ def import_topics(topics):
     for topic in topics:
         response = requests.post("http://localhost:8000/import/admin/topic", data=json.dumps(topic),
                                  headers=headers)
-        print(response.status_code)
+        # print(response.status_code)
 
 
 def import_spaces(spaces):

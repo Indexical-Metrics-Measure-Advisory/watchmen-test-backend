@@ -128,3 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/vcs.xml
+pdf/test.pdf
+test_folder/basic_case.json
+test_folder/basic_case.json
+test_folder/basic_case2.json

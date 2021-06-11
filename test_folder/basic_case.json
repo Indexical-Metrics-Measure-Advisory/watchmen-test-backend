@@ -1,0 +1,244 @@
+{
+  "triggerData": {
+    "topicId": "5607739297483806326",
+    "topic": "test_raw_data",
+    "data": [
+      {
+        "data_id": 1,
+        "text_factor": "text2",
+        "number_factor": 100,
+        "address_factor": "shanghai",
+        "date_factor": "2011-12-14",
+        "array_factor": [
+          {
+            "pk_id": 1
+          },
+          {
+            "pk_id": 2
+          }
+        ]
+      },
+      {
+        "data_id": 2,
+        "text_factor": "text2",
+        "number_factor": 100,
+        "address_factor": "shanghai",
+        "date_factor": "2011-12-14",
+        "array_factor": [
+          {
+            "pk_id": 1
+          }
+        ]
+      },
+      {
+        "data_id": 3,
+        "text_factor": "text2",
+        "number_factor": 100,
+        "address_factor": "shanghai",
+        "date_factor": "2011-12-14",
+        "array_factor": [
+          {
+            "pk_id": 1
+          }
+        ]
+      },
+      {
+        "data_id": 4,
+        "text_factor": "text2",
+        "number_factor": 200,
+        "address_factor": "shanghai",
+        "date_factor": "2011-12-14",
+        "array_factor": [
+          {
+            "pk_id": 2
+          }
+        ]
+      },
+      {
+        "data_id": 5,
+        "text_factor": "text3",
+        "number_factor": 200,
+        "address_factor": "shanghai",
+        "date_factor": "2011-12-14",
+        "array_factor": [
+          {
+            "pk_id": 2
+          },
+          {
+            "pk_id": 3
+          }
+        ]
+      }
+    ]
+  },
+  "dataBeforeRun": [],
+  "dataAfterRun": [
+    {
+      "topicId": "5607739297483806326",
+      "topic": "test_raw_data",
+      "data": [
+        {
+          "data_id": 1,
+          "text_factor": "text2",
+          "number_factor": 100,
+          "address_factor": "shanghai",
+          "date_factor": "2011-12-14",
+          "array_factor": [
+            {
+              "pk_id": 1
+            },
+            {
+              "pk_id": 2
+            }
+          ]
+        },
+        {
+          "data_id": 2,
+          "text_factor": "text2",
+          "number_factor": 100,
+          "address_factor": "shanghai",
+          "date_factor": "2011-12-14",
+          "array_factor": [
+            {
+              "pk_id": 1
+            }
+          ]
+        },
+        {
+          "data_id": 3,
+          "text_factor": "text2",
+          "number_factor": 100,
+          "address_factor": "shanghai",
+          "date_factor": "2011-12-14",
+          "array_factor": [
+            {
+              "pk_id": 1
+            }
+          ]
+        },
+        {
+          "data_id": 4,
+          "text_factor": "text2",
+          "number_factor": 200,
+          "address_factor": "shanghai",
+          "date_factor": "2011-12-14",
+          "array_factor": [
+            {
+              "pk_id": 2
+            }
+          ]
+        },
+        {
+          "data_id": 5,
+          "text_factor": "text3",
+          "number_factor": 200,
+          "address_factor": "shanghai",
+          "date_factor": "2011-12-14",
+          "array_factor": [
+            {
+              "pk_id": 2
+            },
+            {
+              "pk_id": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "5607740540527559761",
+      "topic": "test_distinct_data",
+      "data": [
+        {
+          "pk_id": 1,
+          "number_factor": 100,
+          "date_factor": "2011-12-14",
+          "address_factor": "shanghai",
+          "date_factor_year": 2011,
+          "date_factor_month": 12,
+          "date_factor_workday": 14,
+          "text_factor": "text2",
+          "number_factor_add_constants": 150,
+          "two_number_factor": 200
+        },
+        {
+          "pk_id": 2,
+          "number_factor": 100,
+          "date_factor": "2011-12-14",
+          "address_factor": "shanghai",
+          "date_factor_year": 2011,
+          "date_factor_month": 12,
+          "date_factor_workday": 14,
+          "text_factor": "text2",
+          "number_factor_add_constants": 150,
+          "two_number_factor": 200
+        },
+        {
+          "pk_id": 3,
+          "number_factor": 100,
+          "date_factor": "2011-12-14",
+          "address_factor": "shanghai",
+          "date_factor_year": 2011,
+          "date_factor_month": 12,
+          "date_factor_workday": 14,
+          "text_factor": "text2",
+          "number_factor_add_constants": 150,
+          "two_number_factor": 200
+        },
+        {
+          "pk_id": 4,
+          "number_factor": 200,
+          "date_factor": "2011-12-14",
+          "address_factor": "shanghai",
+          "date_factor_year": 2011,
+          "date_factor_month": 12,
+          "date_factor_workday": 14,
+          "text_factor": "text2",
+          "number_factor_add_constants": 250,
+          "two_number_factor": 400
+        },
+        {
+          "pk_id": 5,
+          "number_factor": 200,
+          "date_factor": "2011-12-14",
+          "address_factor": "shanghai",
+          "date_factor_year": 2011,
+          "date_factor_month": 12,
+          "date_factor_workday": 14,
+          "text_factor": "text3",
+          "number_factor_add_constants": 250,
+          "two_number_factor": 400
+        }
+      ]
+    },
+    {
+      "topicId": "5618495593695683019",
+      "topic": "test_array_factor",
+      "data": [
+        {
+          "id": 1
+        },
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        }
+      ]
+    },
+    {
+      "topicId": "5607741220815596817",
+      "topic": "test_aggregate_data",
+      "data": [
+        {
+          "group_id": "text2",
+          "sum_number_factor": 500
+        },
+        {
+          "group_id": "text3",
+          "sum_number_factor": 200
+        }
+      ]
+    }
+  ]
+}
