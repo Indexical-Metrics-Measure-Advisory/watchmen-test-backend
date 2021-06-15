@@ -129,6 +129,12 @@ dmypy.json
 .pyre/
 .idea/vcs.xml
 pdf/test.pdf
-test_folder/basic_case.json
-test_folder/basic_case.json
-test_folder/basic_case2.json
+
+
+
+pdf
+pdf/
+test_folder
+pdf/
+pdf/report.pdf
+pdf/report.pdf
