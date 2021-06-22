@@ -5,13 +5,27 @@ services:
     ports:
       - 27019:27017
     environment:
-        MONGO_INITDB_DATABASE : watchmen
+        MONGO_INITDB_DATABASE : watchmen-doll
         MONGO_INITDB_ROOT_USERNAME: admin-user
         MONGO_INITDB_ROOT_PASSWORD: admin-password
-
-  presto:
-    image: trinodb/trino
-    container_name: presto
+  watchmen-backend :
+    image: watchmen-backend
+    container_name: watchmen-backend
     ports:
-      - 8088:8080
+      - 8888:80
+    environment :
+      PROJECT_NAME: matryoshka
+      STORAGE_ENGINE: mongo
+      MONGO_HOST : localhost
+      MONGO_PORT : 27019
+      MONGO_DATABASE : test
+      PRESTO_HTTP_URL : http://localhost:8080
+      PRESTO_ON : 'False'
+      HOST_URL : http://localhost:8080
+    volumes:
+      - "./watchmen-doll/temp/rotating.log:/app/temp/rotating.log"
+
+
+
+
 

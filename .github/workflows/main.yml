@@ -25,4 +25,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/indexical-metrics-measure-advisory/watchmen-test-doll:latest
+          tags: ghcr.io/indexical-metrics-measure-advisory/watchmen-doll-test-doll:latest
