@@ -1,0 +1,17 @@
+services:
+  my-mongodb:
+    image: mongo:latest
+    container_name: my-mongodb
+    ports:
+      - 27019:27017
+    environment:
+        MONGO_INITDB_DATABASE : watchmen
+        MONGO_INITDB_ROOT_USERNAME: admin-user
+        MONGO_INITDB_ROOT_PASSWORD: admin-password
+
+  presto:
+    image: trinodb/trino
+    container_name: presto
+    ports:
+      - 8088:8080
+

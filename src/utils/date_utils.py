@@ -1,16 +1,24 @@
+import arrow
+from arrow.parser import ParserMatchError
 from dateutil.parser import parse
 
 
-def is_date(string, fuzzy=False):
+def is_date(string):
     """
     Return whether the string can be interpreted as a date.
 
     :param string: str, string to check for date
     :param fuzzy: bool, ignore unknown tokens in string if True
     """
-    try:
-        parse(string, fuzzy=fuzzy)
-        return True
 
-    except ValueError:
+    if string.isnumeric():
         return False
+    else:
+        try:
+
+            parse(string)
+            arrow.get(string)
+            return True
+
+        except (ParserMatchError,ValueError):
+            return False

@@ -1,3 +1,5 @@
+import time
+
 import arrow
 
 from src.model.case import CaseModel, TopicData
@@ -6,10 +8,11 @@ from src.sdk.common.common_sdk import import_instances, load_topic_data_all, rem
 from src.utils.date_utils import is_date
 
 
-def execute_cases(cases, site):
+def execute_cases(cases, site,clean):
     case_results = []
+
     for case in cases:
-        case_results.append(execute(case, site))
+        case_results.append(execute(case, site,clean))
     return case_results
 
 
@@ -74,13 +77,17 @@ def build_execute_result(topic_results, case):
         topic_result.countMatch = topic_result.expectedCount == topic_result.instanceCount
         for index, exp_data in enumerate(expected_data.data):
             topic_data = find_topic_data(exp_data, topic_data_list)
+
             for key, value in exp_data.items():
                 if topic_data is None:
+                    print("key",key)
+                    print("index",index)
+                    print("len ", len(topic_data_list))
                     topic_data = topic_data_list[index]["data"]
                 topic_value = topic_data[key]
                 if isinstance(topic_value, str) and is_date(topic_value):
-                    topic_date = arrow.get(topic_value)
-                    date = arrow.get(value)
+                    topic_date = arrow.get(topic_value,"M/D/YYYY")
+                    date = arrow.get(value,"M/D/YYYY")
                     if topic_date != date:
                         factor_not_match = build_factor_not_match(date, key, topic_date)
                         topic_result.factorNotMatchList.append(factor_not_match)
@@ -108,18 +115,20 @@ def clear_topic_data(data_after_run, site):
     remove_topic_collection(remove_topic_name_list, site)
 
 
-def execute(case, site):
+def execute(case, site,clean):
 
     prepare_topic_name_list = __prepared_before_topic_data(case.dataBeforeRun, site)
     print("prepared_before_topic_data", prepare_topic_name_list)
     results = __trigger_pipeline(case.triggerData, site)
+
     if __all_success(results):
         print("__all_success")
         topic_results = __get_topic_data(case.dataAfterRun, site)
         print("__get_topic_data")
-        clear_topic_data(case.dataAfterRun, site)
-        # expected_topic_name_list = (list(map(lambda x: x.topic, case.dataAfterRun)))
-        print("clear_topic_data")
+        if clean:
+            clear_topic_data(case.dataAfterRun, site)
+        expected_topic_name_list = (list(map(lambda x: x.topic, case.dataAfterRun)))
+        # print("clear_topic_data")
         print("build_execute_result")
         return build_execute_result(topic_results, case)
     else:

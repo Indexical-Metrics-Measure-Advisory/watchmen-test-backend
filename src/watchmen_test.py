@@ -23,13 +23,16 @@ class WatchmenTest(object):
         sites[name] = {"host": host, "username": username, "password": password}
         save_to_json(sites)
 
-    def test(self, path, site,pdf=None):
+    def test(self, path, site,clean=True,pdf=None):
+        print("test in ",path)
         sites = load_site_json()
         if os.path.isdir(path):
+            print(path)
             cases = load_cases_in_folder(path)
-            results = execute_cases(cases, sites[site])
+            results = execute_cases(cases, sites[site],clean)
+            print(results)
             generate_pdf_report(results,site,pdf)
         elif os.path.isfile(path):
             case = load_case(path)
-            result = execute(case)
+            result = execute(case,sites[site])
             generate_pdf_report([result], site, pdf)
