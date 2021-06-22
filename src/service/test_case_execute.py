@@ -80,9 +80,7 @@ def build_execute_result(topic_results, case):
 
             for key, value in exp_data.items():
                 if topic_data is None:
-                    print("key",key)
-                    print("index",index)
-                    print("len ", len(topic_data_list))
+
                     topic_data = topic_data_list[index]["data"]
                 topic_value = topic_data[key]
                 if isinstance(topic_value, str) and is_date(topic_value):
