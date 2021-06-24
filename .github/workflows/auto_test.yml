@@ -43,4 +43,4 @@ jobs:
           # Optional converting Markdown to HTML (set content_type to text/html too):
           #convert_markdown: true
           # Optional attachments:
-          attachments: attachments.zip,git.diff,./pdf/report.pdf
+          attachments: ./pdf/report.pdf
