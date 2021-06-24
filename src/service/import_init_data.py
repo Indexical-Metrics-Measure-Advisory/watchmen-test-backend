@@ -11,7 +11,6 @@ def __load_users(site):
 
 def init_master_data(site, path):
     user = __load_users(site)
-
     import_users(site, user)
     topics = load_topic_list_in_folder(path)
     import_topics(site, topics)

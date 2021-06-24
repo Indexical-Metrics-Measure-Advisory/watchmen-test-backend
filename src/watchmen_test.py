@@ -33,7 +33,6 @@ class WatchmenTest(object):
                 init_master_data(sites[site],path)
             cases = load_cases_in_folder(path)
             results = execute_cases(cases, sites[site],clean)
-            print(results)
             generate_pdf_report(results,site,pdf)
         elif os.path.isfile(path):
             case = load_case(path)
