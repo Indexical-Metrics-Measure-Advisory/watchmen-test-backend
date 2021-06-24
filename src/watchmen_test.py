@@ -25,10 +25,10 @@ class WatchmenTest(object):
         save_to_json(sites)
 
     def test(self, path, site,init=False,clean=True,pdf=None):
-        print("test in ",path)
+        # print("test in ",path)
         sites = load_site_json()
         if os.path.isdir(path):
-            print(path)
+            # print(path)
             if init:
                 init_master_data(sites[site],path)
             cases = load_cases_in_folder(path)

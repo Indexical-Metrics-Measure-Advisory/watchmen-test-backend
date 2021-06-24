@@ -82,8 +82,8 @@ def build_execute_result(topic_results, case):
                     topic_data = topic_data_list[index]["data"]
                 topic_value = topic_data[key]
                 if isinstance(topic_value, str) and is_date(topic_value):
-                    topic_date = arrow.get(topic_value,"M/D/YYYY")
-                    date = arrow.get(value,"M/D/YYYY")
+                    topic_date = arrow.get(topic_value)
+                    date = arrow.get(value)
                     if topic_date != date:
                         factor_not_match = build_factor_not_match(date, key, topic_date)
                         topic_result.factorNotMatchList.append(factor_not_match)
@@ -124,7 +124,6 @@ def execute(case, site,clean):
         if clean:
             clear_topic_data(case.dataAfterRun, site)
         expected_topic_name_list = (list(map(lambda x: x.topic, case.dataAfterRun)))
-        # print("clear_topic_data")
         print("build_execute_result")
         return build_execute_result(topic_results, case)
     else:
