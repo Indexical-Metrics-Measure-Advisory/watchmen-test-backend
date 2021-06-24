@@ -20,9 +20,15 @@ def execute_cases(cases, site,clean):
 def __prepared_before_topic_data(data_before_run, site):
     if data_before_run:
         print("prepare before data")
-        topic_list =  list(map(lambda x: x.topic, data_before_run))
-
-
+        for prepare_topic_data in data_before_run:
+            topic_name = prepare_topic_data.topic
+            data_list = prepare_topic_data.data
+            instances = []
+            for data in data_list:
+                instance = {"code": topic_name, "data": data}
+                instances.append(instance)
+            import_instances(instances, site)
+        print("prepare before data done")
     else:
         print("dataBefore is empty")
         return []
@@ -114,8 +120,8 @@ def clear_topic_data(data_after_run, site):
 
 
 def execute(case, site,clean):
-    prepare_topic_name_list = __prepared_before_topic_data(case.dataBeforeRun, site)
-    print("prepared_before_topic_data", prepare_topic_name_list)
+    __prepared_before_topic_data(case.dataBeforeRun, site)
+    print("prepared_before_topic_data")
     results = __trigger_pipeline(case.triggerData, site)
     if __all_success(results):
         print("__all_success")
