@@ -9,6 +9,7 @@ from src.utils.header_utils import build_headers
 def import_topics(site,topics):
     headers = build_headers(login(site))
     for topic in topics:
+        print(topic["name"])
         response = requests.post(site["host"] + "import/admin/topic", data=json.dumps(topic),
                                  headers=headers)
         if response.status_code==200:
