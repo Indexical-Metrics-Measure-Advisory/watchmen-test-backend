@@ -23,7 +23,7 @@ services:
       PRESTO_ON : 'False'
       HOST_URL : http://localhost:8080
     volumes:
-      - "./watchmen-doll/temp/rotating.log:/app/temp/rotating.log"
+      - "./watchmen-doll/log/rotating.log:/app/temp/rotating.log"
 
 
 
