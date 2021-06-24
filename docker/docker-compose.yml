@@ -7,7 +7,7 @@ services:
     volumes:
       - ./mongo/seed.js:/docker-entrypoint-initdb.d/seed.js
   watchmen-backend :
-    image: watchmen-backend
+    image: ghcr.io/indexical-metrics-measure-advisory/watchmen-matryoshka-doll:latest
     container_name: watchmen-backend
     ports:
       - 8888:80
