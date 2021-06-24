@@ -23,7 +23,7 @@ jobs:
           # Required mail subject:
           subject: Github Actions CI job result
           # Required recipients' addresses:
-          to: matryoshka.doll@matrdata.com
+          to: ci-postman@matrdata.com
           # Required sender full name (address can be skipped):
           from: github-ci@matrdata.com # <user@example.com>
           # Optional whether this connection use TLS (default is true if server_port is 465)
