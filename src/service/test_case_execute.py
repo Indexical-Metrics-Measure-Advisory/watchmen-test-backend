@@ -112,11 +112,9 @@ def clear_topic_data(data_after_run, site):
 
 
 def execute(case, site,clean):
-
     prepare_topic_name_list = __prepared_before_topic_data(case.dataBeforeRun, site)
     print("prepared_before_topic_data", prepare_topic_name_list)
     results = __trigger_pipeline(case.triggerData, site)
-
     if __all_success(results):
         print("__all_success")
         topic_results = __get_topic_data(case.dataAfterRun, site)
