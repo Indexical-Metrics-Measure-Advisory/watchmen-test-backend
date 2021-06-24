@@ -4,6 +4,7 @@
 
 import os
 
+from src.service.import_init_data import init_master_data
 from src.service.load_case import load_cases_in_folder, load_case
 from src.service.report import generate_pdf_report
 from src.service.site_service import load_site_json, save_to_json
@@ -23,11 +24,13 @@ class WatchmenTest(object):
         sites[name] = {"host": host, "username": username, "password": password}
         save_to_json(sites)
 
-    def test(self, path, site,clean=True,pdf=None):
+    def test(self, path, site,init=False,clean=True,pdf=None):
         print("test in ",path)
         sites = load_site_json()
         if os.path.isdir(path):
             print(path)
+            if init:
+                init_master_data(sites[site],path)
             cases = load_cases_in_folder(path)
             results = execute_cases(cases, sites[site],clean)
             print(results)

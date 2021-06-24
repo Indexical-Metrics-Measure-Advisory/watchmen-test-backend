@@ -15,9 +15,8 @@ def is_date(string):
         return False
     else:
         try:
-
             parse(string)
-            arrow.get(string)
+            arrow.get(string,"M/D/YYYY")
             return True
 
         except (ParserMatchError,ValueError):

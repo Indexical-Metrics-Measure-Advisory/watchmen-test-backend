@@ -4,10 +4,8 @@ services:
     container_name: my-mongodb
     ports:
       - 27019:27017
-    environment:
-        MONGO_INITDB_DATABASE : watchmen-doll
-        MONGO_INITDB_ROOT_USERNAME: admin-user
-        MONGO_INITDB_ROOT_PASSWORD: admin-password
+    volumes:
+      - ./mongo/seed.js:/docker-entrypoint-initdb.d/seed.js
   watchmen-backend :
     image: watchmen-backend
     container_name: watchmen-backend
@@ -16,9 +14,11 @@ services:
     environment :
       PROJECT_NAME: matryoshka
       STORAGE_ENGINE: mongo
-      MONGO_HOST : localhost
-      MONGO_PORT : 27019
-      MONGO_DATABASE : test
+      MONGO_HOST : my-mongodb
+#      MONGO_USERNAME : watchmen
+#      MONGO_PASSWORD : watchmen-pwd
+      MONGO_PORT : 27017
+      MONGO_DATABASE : watchmen
       PRESTO_HTTP_URL : http://localhost:8080
       PRESTO_ON : 'False'
       HOST_URL : http://localhost:8080

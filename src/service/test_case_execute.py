@@ -77,10 +77,8 @@ def build_execute_result(topic_results, case):
         topic_result.countMatch = topic_result.expectedCount == topic_result.instanceCount
         for index, exp_data in enumerate(expected_data.data):
             topic_data = find_topic_data(exp_data, topic_data_list)
-
             for key, value in exp_data.items():
                 if topic_data is None:
-
                     topic_data = topic_data_list[index]["data"]
                 topic_value = topic_data[key]
                 if isinstance(topic_value, str) and is_date(topic_value):

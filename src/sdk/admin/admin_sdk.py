@@ -6,25 +6,29 @@ from src.sdk.auth.auth_sdk import login
 from src.utils.header_utils import build_headers
 
 
-def import_topics(topics):
-    headers = build_headers(login())
+def import_topics(site,topics):
+    headers = build_headers(login(site))
     for topic in topics:
-        response = requests.post("http://localhost:8000/import/admin/topic", data=json.dumps(topic),
+        response = requests.post(site["host"] + "import/admin/topic", data=json.dumps(topic),
                                  headers=headers)
-        # print(response.status_code)
+        if response.status_code==200:
+            print("import successfully")
 
 
-def import_spaces(spaces):
-    headers = build_headers(login())
-    for space in spaces:
-        response = requests.post("http://localhost:8000/import/admin/space", data=json.dumps(space),
-                                 headers=headers)
-        print(response.status_code)
-
-
-def import_pipelines(pipelines):
-    headers = build_headers(login())
+def import_pipelines(site,pipelines):
+    headers = build_headers(login(site))
     for pipeline in pipelines:
-        response = requests.post("http://localhost:8000/import/admin/pipeline", data=json.dumps(pipeline),
+        response = requests.post(site["host"] + "import/admin/pipeline", data=json.dumps(pipeline),
                                  headers=headers)
-        print(response.status_code)
+        if response.status_code == 200:
+            print("import successfully")
+
+
+def import_users(site,user):
+    # headers = build_headers(login(site))
+    headers = {"Content-Type": "application/json"}
+    # for user in users:
+    response = requests.post(site["host"] + "user", data=json.dumps(user),
+                                 headers=headers)
+    if response.status_code == 200:
+        print("import successfully")

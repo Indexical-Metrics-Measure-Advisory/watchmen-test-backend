@@ -118,7 +118,6 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
-/site
 test/
 /test
 
@@ -134,9 +133,6 @@ pdf/test.pdf
 
 
 
-pdf
-pdf/
-test_folder
-pdf/
+
 pdf/report.pdf
 pdf/report.pdf

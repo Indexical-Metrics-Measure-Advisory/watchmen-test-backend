@@ -1,0 +1,570 @@
+[
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": null,
+    "topicId": "5684337165698454903",
+    "name": "demo_raw_opportunity",
+    "type": "raw",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165705044816",
+        "name": "opportunity_name",
+        "enumId": null,
+        "label": "opportunity_name",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165705052347",
+        "name": "status",
+        "enumId": null,
+        "label": "status",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165700547865",
+        "name": "priority",
+        "enumId": null,
+        "label": "priority",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165703349155",
+        "name": "owner",
+        "enumId": null,
+        "label": "owner",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165702795742",
+        "name": "account",
+        "enumId": null,
+        "label": "account",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165704676455",
+        "name": "estimated_value",
+        "enumId": null,
+        "label": "estimated_value",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165704683307",
+        "name": "proposal_deadline",
+        "enumId": null,
+        "label": "proposal_deadline",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165702105457",
+        "name": "expected_close_date",
+        "enumId": null,
+        "label": "expected_close_date",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165706255590",
+        "name": "last_contact",
+        "enumId": null,
+        "label": "last_contact",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165700773919",
+        "name": "primary_contact_for",
+        "enumId": null,
+        "label": "primary_contact_for",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165698918522",
+        "name": "interactions",
+        "enumId": null,
+        "label": "interactions",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165700754629",
+        "name": "interactions_list.interaction",
+        "enumId": null,
+        "label": "interactions_list.interaction",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165701448128",
+        "name": "interactions_list.type",
+        "enumId": null,
+        "label": "interactions_list.type",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165701647628",
+        "name": "interactions_list.date_and_time",
+        "enumId": null,
+        "label": "interactions_list.date_and_time",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165704300562",
+        "name": "interactions_list.status",
+        "enumId": null,
+        "label": "interactions_list.status",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165701381657",
+        "name": "interactions_list.opportunity",
+        "enumId": null,
+        "label": "interactions_list.opportunity",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "text",
+        "factorId": "5684337165712721788",
+        "name": "interactions_list.contact",
+        "enumId": null,
+        "label": "interactions_list.contact",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": null,
+        "type": "array",
+        "factorId": "5684337165712389860",
+        "name": "interactions_list",
+        "enumId": null,
+        "label": "interactions_list",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": "test_demo"
+  },
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": "2021-06-22 10:24:16",
+    "topicId": "5684338592854997474",
+    "name": "demo_opportunity",
+    "type": "distinct",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:24:27",
+        "type": "text",
+        "factorId": "a341f251a4364f4f9195b3f23c892426",
+        "name": "opportunity_name",
+        "enumId": null,
+        "label": "opportunity_name",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:24:35",
+        "type": "text",
+        "factorId": "bd7f632fdd5047c78b6be4b2d1a025d4",
+        "name": "status",
+        "enumId": null,
+        "label": "status",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:24:45",
+        "type": "text",
+        "factorId": "a2129126dbf2445eafb881c4827ae640",
+        "name": "priority",
+        "enumId": null,
+        "label": "priority",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:24:51",
+        "type": "text",
+        "factorId": "6fecfeda7db44e70a808088616219edb",
+        "name": "owner",
+        "enumId": null,
+        "label": "owner",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:24:57",
+        "type": "text",
+        "factorId": "c1de6cda1d334d18bce9b5a8f9a9f62d",
+        "name": "account",
+        "enumId": null,
+        "label": "account",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:25:04",
+        "type": "number",
+        "factorId": "b7d1a24df5b84fc29d817e85a4adbb15",
+        "name": "estimated_value",
+        "enumId": null,
+        "label": "estimated_value",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:25:11",
+        "type": "datetime",
+        "factorId": "0c672379eb3d4e24b29aa239392fbdc3",
+        "name": "proposal_deadline",
+        "enumId": null,
+        "label": "proposal_deadline",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:25:19",
+        "type": "text",
+        "factorId": "576e9fdc31414bc9bbf9f3d8add8e29f",
+        "name": "expected_close_date",
+        "enumId": null,
+        "label": "expected_close_date",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:25:34",
+        "type": "text",
+        "factorId": "a12c7c888ca34295861224dbef6e3e4c",
+        "name": "last_contact",
+        "enumId": null,
+        "label": "last_contact",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:25:49",
+        "type": "text",
+        "factorId": "4a8c69f0964248d399763fb5fceaf2a5",
+        "name": "primary_contact_for",
+        "enumId": null,
+        "label": "primary_contact_for",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": null
+  },
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": "2021-06-22 10:26:18",
+    "topicId": "5684338880034233045",
+    "name": "demo_interaction",
+    "type": "distinct",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:26:30",
+        "type": "text",
+        "factorId": "33bac52fded64efcb6dcc6214eae90c2",
+        "name": "interaction",
+        "enumId": null,
+        "label": "interaction",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:26:40",
+        "type": "text",
+        "factorId": "e67fbbcfab0c47bba87f75181a9eebae",
+        "name": "type",
+        "enumId": null,
+        "label": "type",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:26:46",
+        "type": "text",
+        "factorId": "ff962b1518ff43c49bcb867989942acd",
+        "name": "date_and_time",
+        "enumId": null,
+        "label": "date_and_time",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:26:56",
+        "type": "text",
+        "factorId": "4c11738bbdeb415bad6be97920de7522",
+        "name": "status",
+        "enumId": null,
+        "label": "status",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:27:02",
+        "type": "text",
+        "factorId": "cdd43e2e69dd4d65b165ad6950e09a3a",
+        "name": "opportunity",
+        "enumId": null,
+        "label": "opportunity",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": "interaction"
+  },
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": "2021-06-22 10:27:13",
+    "topicId": "5684339363820662915",
+    "name": "demo_account",
+    "type": "distinct",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:27:21",
+        "type": "text",
+        "factorId": "61630df280e443388ad8c4265667182e",
+        "name": "name",
+        "enumId": null,
+        "label": "name",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": "account"
+  },
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": "2021-06-22 10:27:42",
+    "topicId": "5684339718186204907",
+    "name": "demo_contact",
+    "type": "distinct",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:28:03",
+        "type": "text",
+        "factorId": "79d622a6759947098c44e9320d472764",
+        "name": "name",
+        "enumId": null,
+        "label": "name",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": "contact"
+  },
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": "2021-06-22 10:30:10",
+    "topicId": "5684340819994941079",
+    "name": "demo_raw_account",
+    "type": "raw",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:30:24",
+        "type": "text",
+        "factorId": "077995ed894042e8bd42ac4d87da5355",
+        "name": "name",
+        "enumId": null,
+        "label": "name",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": null
+  },
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": "2021-06-22 10:30:32",
+    "topicId": "5684341001157511138",
+    "name": "demo_raw_contact",
+    "type": "raw",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:30:45",
+        "type": "text",
+        "factorId": "cf43a55c51b54f0fbe72b65494f4ba44",
+        "name": "name",
+        "enumId": null,
+        "label": "name",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": null
+  },
+  {
+    "lastModified": "2021-06-22T10:17:42.795000",
+    "createTime": "2021-06-22 10:33:52",
+    "topicId": "5684343007175804682",
+    "name": "demo_aggregate_opportunity",
+    "type": "aggregate",
+    "kind": "business",
+    "factors": [
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:34:22",
+        "type": "number",
+        "factorId": "defc0478d0c443199a31f6418d32edd4",
+        "name": "price",
+        "enumId": null,
+        "label": "price",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 10:34:41",
+        "type": "text",
+        "factorId": "9a715846aaaa43279709a4df52d07368",
+        "name": "owner",
+        "enumId": null,
+        "label": "owner",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      },
+      {
+        "lastModified": "2021-06-22T10:17:42.795000",
+        "createTime": "2021-06-22 11:55:35",
+        "type": "number",
+        "factorId": "fbf9772ecc164919ac47a52d50aee6e3",
+        "name": "opportunity_count",
+        "enumId": null,
+        "label": "opportunity_count",
+        "description": null,
+        "defaultValue": null,
+        "indexGroup": null
+      }
+    ],
+    "description": null
+  }
+]
