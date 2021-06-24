@@ -11,7 +11,7 @@ def is_date(string):
     :param fuzzy: bool, ignore unknown tokens in string if True
     """
 
-    if string.isnumeric():
+    if string.isnumeric() or string is None:
         return False
     else:
         try:
@@ -19,5 +19,5 @@ def is_date(string):
             arrow.get(string,"M/D/YYYY")
             return True
 
-        except (ParserMatchError,ValueError):
+        except (ParserMatchError,ValueError,TypeError):
             return False

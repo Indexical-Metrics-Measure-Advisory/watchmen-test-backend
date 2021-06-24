@@ -20,7 +20,9 @@ def execute_cases(cases, site,clean):
 def __prepared_before_topic_data(data_before_run, site):
     if data_before_run:
         print("prepare before data")
-        return list(map(lambda x: x.topic, data_before_run))
+        topic_list =  list(map(lambda x: x.topic, data_before_run))
+
+
     else:
         print("dataBefore is empty")
         return []

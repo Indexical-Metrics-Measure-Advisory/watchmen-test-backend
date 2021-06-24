@@ -12,7 +12,7 @@ def import_instances(instances, site=None):
     for instance in instances:
         response = requests.post(site["host"] + "topic/data", data=json.dumps(instance),
                                  headers=headers)
-        if response.status_code=="200":
+        if response.status_code == 200:
             results.append(response.json())
         else:
             print(response.text)
