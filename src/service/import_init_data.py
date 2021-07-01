@@ -12,7 +12,10 @@ def __load_users(site):
 def init_master_data(site, path):
     user = __load_users(site)
     import_users(site, user)
+    print('import_users')
     topics = load_topic_list_in_folder(path)
     import_topics(site, topics)
+    print('import_topics')
     pipelines = load_pipeline_list_in_folder(path)
     import_pipelines(site, pipelines)
+    print('import_pipelines')

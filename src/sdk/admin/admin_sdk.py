@@ -33,3 +33,14 @@ def import_users(site,user):
                                  headers=headers)
     if response.status_code == 200:
         print("import successfully")
+
+
+def get_topic_definition_list(site):
+    headers = build_headers(login(site))
+    response = requests.get(site["host"] + "topic/all"
+                            , headers=headers)
+    return  response.json()
+
+
+
+
