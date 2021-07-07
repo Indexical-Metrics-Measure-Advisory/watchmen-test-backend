@@ -9,6 +9,12 @@
     "host": "http://localhost:8888/",
     "username": "demo_user",
     "password": "abc1234"
+  },
+
+  "gimo": {
+    "host": "https://dataplatform-ptdev.insuremo.com/watchmen/",
+    "username": "demo_user",
+    "password": "abc1234"
   }
 
 }

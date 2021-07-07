@@ -26,8 +26,14 @@ def import_pipelines(site,pipelines):
 
 
 def import_users(site,user):
-    # headers = build_headers(login(site))
+
     headers = {"Content-Type": "application/json"}
+    user_site = site.copy()
+    user_site["username"]="imma-super"
+    print()
+
+    headers = build_headers(login(user_site))
+
     # for user in users:
     response = requests.post(site["host"] + "user", data=json.dumps(user),
                                  headers=headers)

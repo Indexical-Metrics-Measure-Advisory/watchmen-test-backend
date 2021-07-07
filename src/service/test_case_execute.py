@@ -1,3 +1,5 @@
+import time
+
 import arrow
 
 from src.model.case import TopicData
@@ -5,6 +7,8 @@ from src.model.test_result import TestResult, TopicTestResult, FactorNotMatch
 from src.sdk.admin.admin_sdk import get_topic_definition_list
 from src.sdk.common.common_sdk import import_instances, load_topic_data_all, remove_topic_collection
 from src.utils.date_utils import is_date
+
+DATA = "data"
 
 
 def execute_cases(cases, site, clean):
@@ -64,10 +68,10 @@ def __get_topic_data(data_after_run, site):
 
 
 def find_topic_data(exp_data, topic_data_list):
-    # key = list(exp_data.keys())[0]
-    # for topic_data in topic_data_list:
-    #     if topic_data["data"][key] == exp_data[key]:
-    #         return topic_data["data"]
+    key = list(exp_data.keys())[0]
+    for topic_data in topic_data_list:
+        if topic_data[DATA][key] == exp_data[key]:
+            return topic_data[DATA]
     return None
 
 
@@ -95,7 +99,7 @@ def build_execute_result(topic_results, case, topic_list):
                 topic_data = find_topic_data(exp_data, topic_data_list)
                 for key, value in exp_data.items():
                     if topic_data is None:
-                        topic_data = topic_data_list[index]["data"]
+                        topic_data = topic_data_list[index][DATA]
                     topic_value = topic_data[key]
                     if isinstance(topic_value, str) and is_date(topic_value):
                         topic_date = arrow.get(topic_value)
@@ -130,7 +134,9 @@ def clear_topic_data(data_after_run, site):
 def execute(case, site, clean):
     __prepared_before_topic_data(case.dataBeforeRun, site)
     print("prepared_before_topic_data")
+    current_time = time.time()
     results = __trigger_pipeline(case.triggerData, site)
+    print(time.time()- current_time)
     if __all_success(results):
         print("__all_success")
         topic_list = get_topic_definition_list(site)
