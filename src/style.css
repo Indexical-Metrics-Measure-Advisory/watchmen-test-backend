@@ -12,7 +12,7 @@ body {
   font-size: 75%;
   color: #222;
   background: #fff;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 
@@ -88,16 +88,23 @@ dd          { margin-left: 1.5em;}
 	on table cells has to be 27px, instead of the standard 18px or 36px 
 	of other elements. 
  */ 
-table       { margin-bottom: 1.4em; width:100%; }
-th          { font-weight: bold; }
+table       { margin-bottom: 1.4em; width:100%; border-collapse: collapse; }
+th          { font-weight: 500; text-align: left; text-transform: capitalize; }
 thead th    { background: #c3d9ff; }
 th,td,caption { padding: 4px 10px 4px 5px; }
 /*
 	You can zebra-stripe your tables in outdated browsers by adding 
 	the class "even" to every other table row. 
  */
+tbody tr td,
+tbody tr th {
+    font-weight: 400;
+    font-size: 14px;
+}
 tbody tr:nth-child(even) td, 
-tbody tr.even td  { 
+tbody tr:nth-child(even) th,
+tbody tr.even td,
+tbody tr.even th  { 
 	background: #e5ecf9; 
 }
 tfoot       { font-style: italic; }
