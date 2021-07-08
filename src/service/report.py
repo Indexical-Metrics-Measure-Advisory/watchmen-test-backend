@@ -28,6 +28,8 @@ def generate_pdf_report(results, site, pdf=None):
                                                         "countMatch"])
     #
     template_vars = {"title": site, "records": table.to_html()}
+
+    # print(template_vars)
     html_out = template.render(template_vars)
     if pdf:
         HTML(string=html_out).write_pdf("pdf/" + pdf + ".pdf", stylesheets=["./src/style.css"])

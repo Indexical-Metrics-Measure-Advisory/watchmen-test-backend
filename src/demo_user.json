@@ -4,5 +4,6 @@
   "nickName": "demo_user",
   "password": "abc1234",
   "is_active": true,
-  "role": "admin"
+  "role": "admin",
+  "tenantId": "5694668982725279782"
 }
