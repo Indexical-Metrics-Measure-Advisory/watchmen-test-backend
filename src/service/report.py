@@ -23,9 +23,9 @@ def generate_pdf_report(results, site, pdf=None):
     env = Environment(loader=FileSystemLoader('src'))
     template = env.get_template("report-template.html")
     records = __build_table_list(results)
-    table = pd.DataFrame.from_records(records, columns=["caseName", "rawTopicName", "topicName", "instanceCount",
-                                                        "expectedCount",
-                                                        "countMatch"])
+    table = pd.DataFrame.from_records(records, columns=["Case Name", "Raw Topic Name", "topic Name", "instance Count",
+                                                        "expected Count",
+                                                        "count Match"])
     #
     template_vars = {"title": site, "records": table.to_html()}
 
