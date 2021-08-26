@@ -30,7 +30,7 @@ def __prepared_before_topic_data(data_before_run, site):
             for data in data_list:
                 instance = {"code": topic_name, "data": data}
                 instances.append(instance)
-            import_instances(instances, site)
+                import_instances(instances, site)
         print("prepare before data done")
     else:
         print("dataBefore is empty")
@@ -136,7 +136,7 @@ def execute(case, site, clean):
     print("prepared_before_topic_data")
     current_time = time.time()
     results = __trigger_pipeline(case.triggerData, site)
-    print(time.time()- current_time)
+    print(time.time() - current_time)
     if __all_success(results):
         print("__all_success")
         topic_list = get_topic_definition_list(site)
