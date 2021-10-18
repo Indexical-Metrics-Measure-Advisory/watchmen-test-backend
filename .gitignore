@@ -68,8 +68,6 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-site
-
 test_folder
 
 
@@ -144,3 +142,4 @@ test_folder
 
 
 pdf/report.pdf
+.idea/misc.xml
