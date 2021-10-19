@@ -4,6 +4,8 @@ env/
 venv/
 venv-1/
 venv-2/
+site/
+
 
 test_folder/
 pdf/
