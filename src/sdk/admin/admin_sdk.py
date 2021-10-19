@@ -29,6 +29,7 @@ def import_users(site,user):
     headers = {"Content-Type": "application/json"}
     user_site = site.copy()
     user_site["username"]="imma-super"
+    user_site["password"]= "abc1234"
     headers = build_headers(login(user_site))
     # for user in users:
     response = requests.post(site["host"] + "user", data=json.dumps(user),
